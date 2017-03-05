@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="info.androidhive.firebase.UserProfile"
+    android:background="@color/common_google_signin_btn_text_dark_default">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_user_profile" />
+
+    <Button
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSpeak"
+        android:background="@android:drawable/ic_btn_speak_now"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/buttonLogout"
+        android:layout_centerHorizontal="true"
+        tools:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        style="?android:textAppearanceLarge"
+        android:background="@color/colorPrimaryDark"
+        android:text="Logout"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:elevation="7dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/calGoal"
+        android:textStyle="normal|bold"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtText"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        tools:layout_height="30dp"
+        tools:layout_width="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/include3"
+        android:layout_toEndOf="@+id/include3"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar3"
+        tools:layout_height="20dp"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/calGoal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/txtReply"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/calEat"
+        android:layout_above="@+id/progressBar3"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <TextView
+        android:text="Calorie Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold|italic"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Calorie Intake Progress:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/calEat"
+        android:layout_alignBottom="@+id/calEat"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14" />
+
+</RelativeLayout>
